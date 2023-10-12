@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+header{
+    background-color: #CD1818;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    font-size: 12px;
+
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+}
+header ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 15px 30px 15px 30px;
+}
+header ul li a{
+    color :white;
+    text-decoration: none;
+}
+.f-logo {
+    width: 151px;
+    height: 40px;
+    background-position: -2px -7px;
+}
+.ficon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url("https://fptshop.com.vn/Content/v4/images/iconhd.png?v=123");
+}
+header ul li:nth-child(2) form input button{
+    position: relative;
+    display: inline-block;
+}
+header ul li:nth-child(2) form input
+    {
+        display:flex;
+        display: inline;
+        width: 200px;
+        height: 38px;
+        padding :0 16px 16px 0;
+        border: none;
+        font-size: 14px;
+        padding: 0 60px 0 10px;
+        background: whitesmoke;
+        border-radius: 2px;
+        margin-left:100px;
+    }
+
+.buttonsearch {
+    width: 58px;
+    height: 38px;
+    display: inline-block;
+    display: absolute;
+    top: 0px;
+    right:0px;
+    border: none;
+    background: #333;
+    border-radius: 0 2px 2px 0;
+}
+header ul li:nth-child(3){
+    text-align: center;
+    size: 18px;
+    display:block;
+    
+}
+header ul li:nth-child(3) ul{
+    display:block;
+    background-color: whitesmoke;
+    width: 250px;
+    height: auto;
+    padding-left: 15px;
+    position: relative;
+    z-index: 3;
+}
+header ul li:nth-child(3) ul li { 
+    padding :10px;
+    text-align: left;
+    display: none;
+}
+header>ul li:nth-child(3):hover >ul >li{
+    display:block;
+} 
+ 
+nav{
+    background-color: #252525;
+    display: flex;
+    justify-content: space-between;
+    height: 36px;
+    font-size: 14px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+}
+nav ul li{
+    padding: 5px 15px;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color:white;
+}
+nav ul li a i{
+    margin-right:5px;
+}
+.menu-bar-content ul:hover li{
+    opacity: 0.6;
+}
+nav ul li:nth-last-child(10){
+    display:none;
+}
+nav >ul >li:nth-last-child(10) ul li{
+    background-color: whitesmoke;
+    width: 250px;
+    height: auto;
+    padding-left: 15px;
+    display:none;
+    
+}
+nav ul li:nth-child(10){
+    text-align: center;
+    size: 18px;
+    display:block;
+}
+nav ul li:nth-child(3) ul{
+    display:block;
+    background-color: whitesmoke;
+    width: 250px;
+    height: auto;
+    padding-left: 15px;
+    position: relative;
+    z-index: 3;
+}
+nav ul li:nth-child(3) ul li { 
+    padding :10px;
+    text-align: left;
+    display: none;
+}
