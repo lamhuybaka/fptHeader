@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login{
+    width: 580px;
+    height: 480px;
+    background-color: wheat;
+    border-radius: 10px;
+}
+h3{
+    padding:15px 20px;
+    border-bottom: 1px solid #F1F2F3;
+    font-size: 22px;
+}
+.circle img{
+    width: 200px;
+    height: 190px;
+    display: block;
+    position: relative;
+    margin-top:-25px;
+    padding:15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+pre{
+    text-align: center;
+    padding:5px;
+}
+.input input{
+    margin-left: auto;
+    margin-right: auto;
+    color: #444b52;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    display: block;
+    width: 70%;
+    font-family: inherit;
+}
+.login .input{
+    padding-top:20px;
+}
+
+.login button {
+    margin-top:25px;
+}
+button{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:150px;
+    height:55px;
+    background-color: #D2351D;
+    color:#fff;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 8px;
+
+}
+i{
+    font-size: 24px;
+    position: relative;
+    margin-left: 530px;
+    top:-45px;
+    color:whitesmoke;
+    cursor: pointer;
+}
+i:hover{
+    color: #6A737A;
+}
+
