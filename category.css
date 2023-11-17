@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+.body-category{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    max-width:1320px;
+    height:auto;
+    background-color: white;
+    position: absolute;
+
+}
+.category-left{
+    width: 30%;
+    /* background-color: burlywood; */
+    height:auto;
+    text-align: left;
+    margin-left:20px;
+    font-size: larger;
+    float: left;
+    display: block;
+    padding:30px;
+
+}
+.title-category{
+    padding: 15px 0;
+}
+.category-right{
+    height: auto;
+    float: left;
+}
+.slider-thuonghieu{
+    background-color: whitesmoke;
+    height: auto;
+    border: 1px solid rgb(187, 178, 178);
+    border-radius: 5px;
+    text-align: left;
+}
+.slider-thuonghieu h1{
+    margin-left:30px;
+}
+.slider-thuonghieu-img{
+    padding:5px;
+}
+.category-main{
+    height: 1000px;
+    background-color: white;
+
+}
+.filter-product {
+    text-align: left;
+    margin-left:10px;
+    padding:20px;
+   
+}
+.filter-bar{
+    display: flex;
+    list-style: none;
+    position: relative;
+    left:120px;
+    bottom: 30px;
+
+
+}
+.filter-bar li{
+    padding: 10px 15px;
+    border:1px solid rgb(182, 176, 176);
+    cursor: pointer;
+}
+.filter-bar li:nth-child(1){
+    background-color: #CB1C22;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.filter-bar li:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.filter-bar li:nth-child(2):hover,.filter-bar li:nth-child(3):hover,.filter-bar li:nth-child(4):hover,.filter-bar li:nth-child(5):hover{
+    background-color: rgb(217, 210, 210);
+    transition: all ease 0.5s;
+}
+
+
+
+.category .box-category{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px , 1fr));
+    gap:15px;
+}
+.category .box-category .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background:#fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+.category .box-category .box img{ 
+    height:200px;
+    width: 250px;
+    border: 2px solid #CB1C22 ;
+    border-radius: 10px;
+    position: relative;
+}
+.category .box-category .box .logo-item img{
+    height:40px;
+    width: 40px;
+    border-radius: 100%;
+    border:none;
+}
+.category .box-category .box h3{
+    color: rgb(100, 93, 93);
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: left;
+}
+.category .box-category .box h3:hover{
+    color:blue;
+}
+.category .box-category .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.category .box-category .box .butn{
+    margin-top: 10px;
+    display: inline-block;
+    background: black;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 5px 12px;
+    text-decoration: none;
+    top: 30px;
+}
+.category .box-category .box .butn:hover{
+    background-color: #777;
+}
+.category .box-category .box:hover img{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.05)
+}
+.category .box-category .box .sale{
+    position: absolute;
+    background-color: #CB1C22;
+    color:#fff;
+    border-radius: 5px;
+    padding: 3px 8px;
+    top:190px;
+    left: 20px;
+    font-size: 13px;
+}
+.category .box-category .box .tragop{
+    position: absolute;
+    background-color: #EA9D02;
+    color:#fff;
+    border-radius: 5px;
+    padding: 3px 8px;
+    top:165px;
+    left: 20px;
+    font-size: 13px;
+}
+.category .box-category .box{
+    position: relative;
+}
+.category .box-category .box .price-item{
+    margin-top: 10px;
+    display: inline-block;
+    background: #CB1C22;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 25px;
+    padding: 5px 12px;
+}
+.category .box-category .box .old-price{
+    color:#777;
+    text-decoration: line-through;
+
+}
+
+.category .box-category .box .linhkien p{
+    display: inline-block;
+    padding:0 4px;
+}
+.category .box-category .box .linhkien i{
+    margin-right: 2px;
+}
+
+
+
+.category .box-category .box .buy-button{
+    background-color: #CB1C22;
+    font-size: 16px;
+    color: white;
+    padding:8px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.category .box-category .box .compare-button{
+    background-color: #c0b0b1;
+    font-size: 16px;
+    color: white;
+    padding:8px 15px;
+    border-radius: 10px;
+    cursor: pointer;;
+
+}
+.category .box-category .box .buy{
+    visibility: hidden;
+    opacity: 0;
+}
+.category .box-category .box:hover .buy{
+    visibility:visible;
+    opacity: 1;
+}
+
