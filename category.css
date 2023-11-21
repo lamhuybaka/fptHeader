@@ -7,7 +7,7 @@
 .body-category{
     margin-left: 5%;
     margin-right: 5%;
-    text-align: center;
+    text-align: left;
     max-width:1320px;
     height:auto;
     background-color: white;
@@ -16,7 +16,6 @@
 }
 .category-left{
     width: 30%;
-    /* background-color: burlywood; */
     height:auto;
     text-align: left;
     margin-left:20px;
@@ -24,14 +23,31 @@
     float: left;
     display: block;
     padding:30px;
+    color:#4D4D4D;
+    font-size: 16px;
 
 }
 .title-category{
     padding: 15px 0;
 }
+.title-h1{
+    font-size: xx-large;
+}
+.title-sanpham{
+    font-size: 18px;
+    font-weight: 200;
+    color:grey;
+
+}
+.check-hangsanxuat tr td label{
+    padding:100px 0;
+}
 .category-right{
     height: auto;
     float: left;
+}
+td{
+    padding:8px 0;
 }
 .slider-thuonghieu{
     background-color: whitesmoke;
@@ -45,6 +61,12 @@
 }
 .slider-thuonghieu-img{
     padding:5px;
+    cursor: pointer;
+}
+.slider-thuonghieu .thuonghieu-1:hover ,.thuonghieu-2:hover,.thuonghieu-3:hover,.thuonghieu-4:hover,.thuonghieu-5:hover,
+.thuonghieu-6:hover,.thuonghieu7:hover,.thuonghieu-8:hover{
+    transform: scale(1.1);
+    transition: all ease-in 0.2s;
 }
 .category-main{
     height: 1000px;
@@ -81,8 +103,9 @@
     border-bottom-right-radius: 5px;
 }
 .filter-bar li:nth-child(2):hover,.filter-bar li:nth-child(3):hover,.filter-bar li:nth-child(4):hover,.filter-bar li:nth-child(5):hover{
-    background-color: rgb(217, 210, 210);
-    transition: all ease 0.5s;
+    background-color: rgb(177, 172, 172);
+    transition: all ease 0.2s;
+    color:white;
 }
 
 
@@ -91,13 +114,22 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px , 1fr));
     gap:15px;
+    position: relative;
+}
+.category-right .category-main{
+    height:auto;
+    border: 1px solid rgb(225, 218, 218);
+    box-shadow: 0 5px 10px rgba(213, 209, 209, 0.2);
+    margin-top:30px;
+    width:100%;
 }
 .category .box-category .box{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
     background:#fff;
-    text-align: center;
+    text-align: left;
     padding: 30px 20px;
+    position: absolute;
 }
 .category .box-category .box img{ 
     height:200px;
@@ -131,18 +163,49 @@
     display: inline-block;
     background: black;
     color: #fff;
-    font-size: 17px;
+    font-size: 16px;
     border-radius: 5px;
-    padding: 5px 12px;
+    padding: 5px 10px;
     text-decoration: none;
     top: 30px;
+}
+.butn2{
+    /* padding:5px 45px; */
+    width: 100px;
+    height:28px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right:15px;
+    text-decoration: none;
+    background-color:#d8d6d6;
+    color:#5a5656;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.butn2:hover{
+    background-color: black;
+    color: white;
+
+}
+.button-change{
+    padding:5px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color:#d8d6d6;
+    color:#5a5656;
+}
+.button-change:hover{
+    background-color: black;
+    color: white;
 }
 .category .box-category .box .butn:hover{
     background-color: #777;
 }
-.category .box-category .box:hover img{
+.category .box-category .box:hover .img-main{
     box-shadow: 0 10px 15px rgba(0,0,0,.3);
-    transform: scale(1.05)
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all ease 0.25s;
 }
 .category .box-category .box .sale{
     position: absolute;
@@ -154,6 +217,7 @@
     left: 20px;
     font-size: 13px;
 }
+
 .category .box-category .box .tragop{
     position: absolute;
     background-color: #EA9D02;
@@ -199,16 +263,26 @@
     padding:8px 25px;
     border-radius: 10px;
     cursor: pointer;
+    border:none;
+}
+.category .box-category .box .buy-button:hover{
+    background-color: #AE1427;
+    transition: all ease 0.3s;
 }
 .category .box-category .box .compare-button{
-    background-color: #c0b0b1;
+    background-color: #AAAAAA;
     font-size: 16px;
     color: white;
     padding:8px 15px;
     border-radius: 10px;
     cursor: pointer;;
-
+    border:none;
 }
+.category .box-category .box .compare-button:hover{
+    background-color: #5a5656;
+    transition: all ease 0.3s;
+}
+
 .category .box-category .box .buy{
     visibility: hidden;
     opacity: 0;
@@ -217,4 +291,13 @@
     visibility:visible;
     opacity: 1;
 }
-
+.category .box-category .box .logo-item .image-circle1:hover,.category .box-category .box .logo-item .image-circle2:hover,
+.category .box-category .box .logo-item .image-circle3:hover{
+    border:0.2px solid #AAAAAA;
+}
+.old-price{
+    position: relative;
+    margin-left: 170px;
+    bottom:28px;
+    font-size: 15px;
+}
